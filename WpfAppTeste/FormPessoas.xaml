@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfAppTeste.FormPessoas"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+        
+        xmlns:local="clr-namespace:WpfAppTeste"
+        mc:Ignorable="d"
+       Title="Novo Usuário" Height="724" Width="394.037">
+    <Grid Margin="0,-1,4,-3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="ID" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox  HorizontalAlignment="Left" Height="23" Text="{Binding Id}" Margin="10,41,0,0" TextWrapping="Wrap"  
+                 IsEnabled="False" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Nome" HorizontalAlignment="Left" Height="23" Margin="10,95,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Sobrenome" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Sobrenome" HorizontalAlignment="Left" Height="23" Margin="10,149,0,0" TextWrapping="Wrap" Text="{Binding Sobrenome}" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Data de Nascimento" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <DatePicker Name="Txt_Datanascimento" HorizontalAlignment="Left" SelectedDate="{Binding DataNascimento}" Margin="10,207,0,0" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <xctk:MaskedTextBox x:Name="Txt_Cpf"
+                             Mask="000.000.000-00 " Margin="10,257,0,375"
+                             Text="{Binding Cpf}" />
+        
+
+        <Label Content="CEP" HorizontalAlignment="Left" Margin="8,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <xctk:MaskedTextBox x:Name="Txt_Cep"
+                             Mask="00000-000 " Margin="10,257,0,375"
+                             Text="{Binding Cep}" RenderTransformOrigin="0.492,2.227" />
+
+        <Label Content="Endereço" HorizontalAlignment="Left" Margin="12,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Endereco" HorizontalAlignment="Left" Height="23" Margin="12,357,0,0" TextWrapping="Wrap" Text="{Binding Endereco}" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Número" HorizontalAlignment="Left" Margin="10,379,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Numero" HorizontalAlignment="Left" Height="23" Margin="12,407,0,0" TextWrapping="Wrap" Text="{Binding Numero}" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Complemento" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Complemento" HorizontalAlignment="Left" Height="23" Margin="12,459,0,0" TextWrapping="Wrap" Text="{Binding Complemento}" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Cidade" HorizontalAlignment="Left" Margin="10,484,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Cidade" HorizontalAlignment="Left" Height="23" Margin="12,514,0,0" TextWrapping="Wrap" Text="{Binding Cidade}" VerticalAlignment="Top" Width="364"/>
+
+        <Label Content="Estado" HorizontalAlignment="Left" Margin="10,540,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+        <TextBox Name="Txt_Estado" HorizontalAlignment="Left" Height="23" Margin="12,568,0,0" TextWrapping="Wrap" Text="{Binding Estado}" VerticalAlignment="Top" Width="364" RenderTransformOrigin="0.489,0.957"/>
+
+        <Button Content="Cancelar" IsCancel="True" HorizontalAlignment="Left" Height="26" Margin="297,627,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.507,1.192"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" 
+                                        IsDefault="True" 
+                        Click="OKButton_Click"
+                Height="26" Margin="201,627,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.507,2"/>
+
+
+    </Grid>
+
+</Window>
