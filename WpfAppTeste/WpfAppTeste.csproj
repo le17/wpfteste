@@ -71,8 +71,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Cadastro.cs" />
-    <Compile Include="RequiredFiedValidationRule.cs" />
-    <Compile Include="User.cs" />
     <Compile Include="ViewModel\CadastroViewModel.cs" />
     <Page Include="FormConsulta.xaml">
       <SubType>Designer</SubType>

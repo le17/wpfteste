@@ -24,7 +24,7 @@
                  IsEnabled="False" VerticalAlignment="Top" Width="364"/>
 
         <Label Content="Nome" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
-        <TextBox Name="Txt_Nome" HorizontalAlignment="Left" Height="23" Margin="10,95,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="364"/>
+        <TextBox Name="Txt_Nome" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="364"/>
 
         <Label Content="Sobrenome" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
         <TextBox Name="Txt_Sobrenome" HorizontalAlignment="Left" Height="23" Margin="10,149,0,0" TextWrapping="Wrap" Text="{Binding Sobrenome}" VerticalAlignment="Top" Width="364"/>
@@ -36,11 +36,11 @@
         <xctk:MaskedTextBox x:Name="Txt_Cpf"
                              Mask="000.000.000-00 " Margin="10,257,0,375"
                              Text="{Binding Cpf}" />
-        
 
-        <Label Content="CEP" HorizontalAlignment="Left" Margin="8,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
+
+        <Label Content="CEP" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
         <xctk:MaskedTextBox x:Name="Txt_Cep"
-                             Mask="00000-000 " Margin="10,257,0,375"
+                             Mask="00000-000 " Margin="10,310,0,322"
                              Text="{Binding Cep}" RenderTransformOrigin="0.492,2.227" />
 
         <Label Content="Endereço" HorizontalAlignment="Left" Margin="12,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.903,-2.814"/>
@@ -61,8 +61,7 @@
         <Button Content="Cancelar" IsCancel="True" HorizontalAlignment="Left" Height="26" Margin="297,627,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.507,1.192"/>
         <Button Content="Salvar" HorizontalAlignment="Left" 
                                         IsDefault="True" 
-                        Click="OKButton_Click"
-                Height="26" Margin="201,627,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.507,2"/>
+                        Click="OKButton_Click" Margin="201,627,0,1" Width="75" RenderTransformOrigin="0.507,2"/>
 
 
     </Grid>

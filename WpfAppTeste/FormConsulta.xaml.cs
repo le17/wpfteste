@@ -35,5 +35,13 @@ namespace WpfAppTeste
                 txtlista.Text += " \n " + linha;
             }
         }
+
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            
+            
+            Close();
+            
+        }
     }
 }

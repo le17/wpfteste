@@ -10,5 +10,6 @@
 
         <Button Content="Buscar" Height="43" Margin="907,253,-69,-98" VerticalAlignment="Top" Click="Button_Click"/>
         <TextBox Name="txtlista" HorizontalAlignment="Left" Height="165" Margin="29,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="890"/>
+        <Button Content="Voltar" Height="43" Margin="756,253,82,-98" VerticalAlignment="Top" Click="Button_Click1"/>
     </Grid>
 </Window>
